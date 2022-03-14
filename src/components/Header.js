@@ -10,19 +10,19 @@ const Header = () => {
 
     return (
         <Container>
-            <a href="https://molucax.vercel.app/">
+            <a href="https://tesla-react.vercel.app/">
                 <img src="/images/logo.svg" alt="" />
             </a>
             <Menu>
                 {
                     (data.slice(0, 4)).map((c, i) => (
-                        <a key={i} href="https://molucax.vercel.app/">{c.title}</a>
+                        <a key={i} href="https://tesla-react.vercel.app/">{c.title}</a>
                     ))
                 }
             </Menu>
             <RightMenu>
-                <a href="https://molucax.vercel.app/">Shop</a>
-                <a href="https://molucax.vercel.app/">Tesla Account</a>
+                <a href="https://tesla-react.vercel.app/">Shop</a>
+                <a href="https://tesla-react.vercel.app/">Tesla Account</a>
                 <CustomMenu onClick={() => setBurgerStatus(true)}/>
             </RightMenu>
             <BurgerNav show={burgerStatus}>
@@ -31,14 +31,14 @@ const Header = () => {
                 </CloseWrapper>
                 {
                     (data.slice(0, 4)).map((c, i) => (
-                        <li><a key={i} href="https://molucax.vercel.app/">{c.title}</a></li>
+                        <li><a key={i} href="https://tesla-react.vercel.app/">{c.title}</a></li>
                     ))
                 }
-                <li><a href="https://molucax.vercel.app/">Existing Inventory</a></li>
-                <li><a href="https://molucax.vercel.app/">Used Inventory</a></li>
-                <li><a href="https://molucax.vercel.app/">Trade-in</a></li>
-                <li><a href="https://molucax.vercel.app/">Cybertruck</a></li>
-                <li><a href="https://molucax.vercel.app/">Roadaster</a></li>
+                <li><a href="https://tesla-react.vercel.app/">Existing Inventory</a></li>
+                <li><a href="https://tesla-react.vercel.app/">Used Inventory</a></li>
+                <li><a href="https://tesla-react.vercel.app/">Trade-in</a></li>
+                <li><a href="https://tesla-react.vercel.app/">Cybertruck</a></li>
+                <li><a href="https://tesla-react.vercel.app/">Roadaster</a></li>
             </BurgerNav>
         </Container>
     )
